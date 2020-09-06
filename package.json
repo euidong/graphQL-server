@@ -1,0 +1,34 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nexus dev",
+    "build": "nexus build",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "nexus": "^0.26.1",
+    "nexus-plugin-prisma": "^0.18.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.13",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "globals": {
+      "ts-jest": {
+        "diagnostics": {
+          "warnOnly": true
+        }
+      }
+    },
+    "testEnvironment": "./tests/nexus-test-environment.js"
+  }
+}
